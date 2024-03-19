@@ -1,0 +1,149 @@
+/* Common styles for all screen sizes */
+body {
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 1px solid black; /* Add border style */
+}
+
+/* Styles for the company name section */
+.company-name-section {
+    background-color: purple;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    max-width: 10cm;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* Styles for the introductory section */
+.info-section {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 25cm;
+    text-align: center;
+    position: relative;
+}
+
+/* Styles for paragraphs within the introductory section */
+.info-section p {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Styles for the underline effect after paragraphs within the introductory section */
+.info-section::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    border-bottom: 3px dotted purple;
+}
+
+/* Styles for the "Meet Our Team" section */
+.meet-our-team {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Styles for paragraphs within the "Meet Our Team" section */
+.meet-our-team p {
+    font-weight: bold;
+}
+
+/* Common styles for team sections */
+.leadership-team,
+.Development-team,
+.Sales-and-Marketing-team {
+    background-color: purple;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    margin: 15px auto;
+    max-width: 9cm;
+    border-radius: 10px;
+}
+
+/* Styles for headings within team sections */
+.leadership-team h2,
+.Development-team h2,
+.Sales-and-Marketing-team h2 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Styles for the images section */
+.images-section {
+    text-align: center;
+}
+
+/* Styles for the container holding images */
+.images-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Styles for images */
+.images-section img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 20px 10px;
+}
+
+/* Styles for the first paragraph within the company information */
+.company-info p:first-child {
+    color: black;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Styles for the second paragraph within the company information */
+.company-info p:last-child {
+    color: purple;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+/* Styles for the last container in the images section */
+.images-section .container:last-child {
+    margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px (e.g., tablets and mobile phones) */
+    .info-section {
+        padding: 10px;
+    }
+
+    .info-section p {
+        font-size: 16px;
+    }
+
+    .meet-our-team {
+        font-size: 16px;
+    }
+
+    .leadership-team,
+    .Development-team,
+    .Sales-and-Marketing-team {
+        max-width: 90%;
+    }
+
+    .images-section img {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+}
